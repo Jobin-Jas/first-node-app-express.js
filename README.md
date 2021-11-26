@@ -1,25 +1,55 @@
-# first-node-app-express.js
+# todo-app-node
 
-Technologies and Packages:
+## Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Contributing](../CONTRIBUTING.md)
+
+## About <a name = "about"></a>
+
+Write about 1-2 paragraphs describing the purpose of your project.
+
+## Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+### Prerequisites
 
 NodeJS
+
 Express
+
 mysql2
+
 bcryptjs
+
 jsonwebtoken
+
 express-validator
+
 dotenv
+
 cors
 
--+------------------------------+--------------------------------+
-| Methods |             Urls             |            Actions             |
-+---------+------------------------------+--------------------------------+
-| Get     | /api/v1/users                | Get all users                  |
-| Get     | /api/v1/users/id/1           | Get user with id=1             |
-| Get     | /api/v1/users/username/julia | Get user with username='julia' |
-| Get     | /api/v1/users/whoami         | Get the current user details   |
-| Post    | /api/v1/users                | Create new user                |
-| Patch   | /api/v1/users/users/id/1     | Update user with id=1          |
-| Delete  | /api/v1/users/id/1           | Delete user with id=1          |
-| Post    | /api/v1/users/login          | Login with email and password  |
-+---------+------------------------------+--------------------------------+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+npm i
+```
+
+And 
+
+```
+cp en.example .env
+```
+
+
+## Usage <a name = "usage"></a>
+
+Add notes about how to use the system.
