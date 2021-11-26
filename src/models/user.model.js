@@ -5,7 +5,7 @@ class UserModel {
     tableName = 'user';
 
     find = async (params = {}) => {
-        let sql = `SELECT * FROM ${this.tableName}`;
+        let sql = `SELECT id, username, first_name, last_name, email, role, age FROM ${this.tableName}`;
 
         if (!Object.keys(params).length) {
             return await query(sql);
@@ -20,7 +20,7 @@ class UserModel {
     findOne = async (params) => {
         const { columnSet, values } = multipleColumnSet(params)
 
-        const sql = `SELECT * FROM ${this.tableName}
+        const sql = `SELECT id, username, first_name, last_name, email, role, age FROM ${this.tableName}
         WHERE ${columnSet}`;
 
         const result = await query(sql, [...values]);
